@@ -22,13 +22,14 @@ const ImagesStep: React.FC<UploadStepProps> = ({
 	uploading,
 }) => {
 	const [showLoading, setShowLoading] = useState(false);
+	
 
 	// Keep loading visible for at least 2 seconds
 	useEffect(() => {
 		if (uploading) {
 			setShowLoading(true);
 		} else {
-			const timer = setTimeout(() => setShowLoading(false), 10000);
+			const timer = setTimeout(() => setShowLoading(false), 100);
 			return () => clearTimeout(timer);
 		}
 	}, [uploading]);

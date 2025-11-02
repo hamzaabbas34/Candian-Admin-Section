@@ -2,6 +2,7 @@ export interface Product {
 	_id: string;
 	brand: "Azure" | "Monsini" | "Risky";
 	year: number;
+	viewInfront : boolean;
 	versionName: string;
 	style: string;
 	division: string;
