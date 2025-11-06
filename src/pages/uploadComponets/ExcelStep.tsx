@@ -1903,7 +1903,7 @@ const ExcelStep: React.FC<UploadStepProps> = ({
 			(col) => !headers.includes(col)
 		);
 		if (missingColumns.length > 0) {
-			errors.push(`Missing required columns: ${missingColumns.join(", ")}`);
+			errors.push(`Correct Your Columns Name : ${missingColumns.join(", ")}  , should be like this`);
 		}
 
 		// Check color columns

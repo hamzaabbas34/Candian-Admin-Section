@@ -129,7 +129,7 @@ const ImagesStep: React.FC<UploadStepProps> = ({
 										<img
 											src={URL.createObjectURL(image)}
 											alt={image.name}
-											className="w-full h-16 object-cover rounded border"
+											className="w-full h-52 object-cover object-center rounded border"
 										/>
 										<div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity rounded" />
 									</div>

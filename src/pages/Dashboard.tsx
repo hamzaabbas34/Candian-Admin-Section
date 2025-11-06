@@ -50,10 +50,8 @@ const Dashboard: React.FC = () => {
 				{["Azure", "Monsini", "Risky"].map((brand) => {
 					const brandReleases = releases.filter((r) => r.brand === brand);
 					const published = brandReleases.find((r) => r.isPublished);
-					const totalProducts = brandReleases.reduce(
-						(sum, r) => sum + (r.productCount || 0),
-						0
-					);
+					const totalproduct = brandReleases.reduce((total, release) => total + release.totalProduct, 0);
+					
 					const totalCategory = [
 						...new Set(brandReleases.map((r) => r.category)),
 					].length;
@@ -93,7 +91,7 @@ const Dashboard: React.FC = () => {
 										<span className="text-muted-foreground">
 											Total Products
 										</span>
-										<span className="font-medium">{totalProducts}</span>
+										<span className="font-medium">{totalproduct}</span>
 									</div>
 								</div>
 							</CardContent>
@@ -133,7 +131,7 @@ const Dashboard: React.FC = () => {
 												{release.versionName}
 											</div>
 											<div className="text-sm text-muted-foreground">
-												products {release.productCount || 0}
+												products {release.productCount}
 											</div>
 										</div>
 									</div>

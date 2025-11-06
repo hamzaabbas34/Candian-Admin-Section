@@ -2,8 +2,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 // Get API base URL from environment variable or fallback to default
-const API_BASE_URL = "http://srv1051513.hstgr.cloud:3200";
-// const API_BASE_URL = "http://localhost:3200";
+//const API_BASE_URL = "http://srv1051513.hstgr.cloud:3200";
+ const API_BASE_URL = "http://localhost:3200";
 
 const api = axios.create({
 	baseURL: `${API_BASE_URL}/api`,

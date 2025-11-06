@@ -5,8 +5,8 @@
  */
 
 // Backend API base URL from environment variable
-// export const API_BASE_URL = "http://localhost:3200";
-export const API_BASE_URL = 'http://srv1051513.hstgr.cloud:3200';
+export const API_BASE_URL = "http://localhost:3200";
+// export const API_BASE_URL = 'http://srv1051513.hstgr.cloud:3200';
 
 // API endpoints
 export const API_ENDPOINTS = {
